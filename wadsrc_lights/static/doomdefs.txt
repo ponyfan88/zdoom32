@@ -178,7 +178,7 @@ pointlight PLASMABALL2
     size 56
 }
 
-flickerlight PLASMA1_X1
+flickerlight PLASMA2_X1
 {
     color 0.9 0.2 0.2
     size 64
@@ -186,7 +186,7 @@ flickerlight PLASMA1_X1
     chance 0.4
 }
 
-flickerlight PLASMA1_X2
+flickerlight PLASMA2_X2
 {
     color 0.6 0.2 0.2
     size 80
@@ -194,7 +194,7 @@ flickerlight PLASMA1_X2
     chance 0.4
 }
 
-flickerlight PLASMA1_X3
+flickerlight PLASMA2_X3
 {
     color 0.2 0.0 0.0
     size 8
