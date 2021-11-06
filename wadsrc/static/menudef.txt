@@ -1829,6 +1829,10 @@ OptionMenu VideoModeMenu
 	{
 		Option "$VIDMNU_HIDPI",			"vid_hidpi", "YesNo"
 	}
+	IfOption(Windows)
+	{
+		Option "$VIDMNU_BRDLSS",		"win_borderless", "YesNo"
+	}
 	Option "Renderer",					"vid_renderer", "Renderers"
 	Option "$VIDMNU_ASPECTRATIO",		"menu_screenratios", "Ratios"
 	Option "$VIDMNU_FORCEASPECT",		"vid_aspect", "ForceRatios"
