@@ -18,7 +18,6 @@ ACTOR LostSoul
 	PainSound "skull/pain"
 	DeathSound "skull/death"
 	ActiveSound "skull/active"
-	RenderStyle SoulTrans
 	Obituary "$OB_SKULL"
 	States
 	{

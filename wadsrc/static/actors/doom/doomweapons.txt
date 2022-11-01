@@ -430,8 +430,6 @@ ACTOR PlasmaBall
 	Damage 5
 	Projectile
 	+RANDOMIZE
-	RenderStyle Add
-	Alpha 0.75
 	SeeSound "weapons/plasmaf"
 	DeathSound "weapons/plasmax"
 	Obituary "$OB_MPPLASMARIFLE"
@@ -540,8 +538,6 @@ ACTOR BFGBall
 	Damage 100
 	Projectile
 	+RANDOMIZE
-	RenderStyle Add
-	Alpha 0.75
 	DeathSound "weapons/bfgx"
 	Obituary "$OB_MPBFG_BOOM"
 	States
@@ -561,8 +557,6 @@ ACTOR BFGExtra
 {
 	+NOBLOCKMAP
 	+NOGRAVITY
-	RenderStyle Add
-	Alpha 0.75
 	DamageType "BFGSplash"
 	States
 	{

@@ -39,8 +39,6 @@ ACTOR BulletPuff
 	+NOGRAVITY
 	+ALLOWPARTICLES
 	+RANDOMIZE
-	RenderStyle Translucent
-	Alpha 0.5
 	VSpeed 1
 	Mass 5
 	States

@@ -66,8 +66,7 @@ ACTOR CacodemonBall
 	Damage 5
 	Projectile 
 	+RANDOMIZE
-	RenderStyle Add
-	Alpha 1
+	RenderStyle None
 	SeeSound "caco/attack"
 	DeathSound "caco/shotx"
 	States

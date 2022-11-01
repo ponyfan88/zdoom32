@@ -66,8 +66,7 @@ ACTOR Archvile
 ACTOR ArchvileFire
 {
 	+NOBLOCKMAP +NOGRAVITY
-	RenderStyle Add
-	Alpha 1
+	RenderStyle None
 	States
 	{
 	Spawn:

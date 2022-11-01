@@ -67,8 +67,7 @@ ACTOR ArachnotronPlasma
 	Damage 5
 	Projectile 
 	+RANDOMIZE
-	RenderStyle Add 
-	Alpha 0.75
+	RenderStyle None
 	SeeSound "baby/attack"
 	DeathSound "baby/shotx"
 	States

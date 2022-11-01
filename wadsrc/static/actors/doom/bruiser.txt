@@ -113,8 +113,7 @@ ACTOR BaronBall
 	Damage 8
 	Projectile 
 	+RANDOMIZE
-	RenderStyle Add
-	Alpha 1
+	RenderStyle None
 	SeeSound "baron/attack"
 	DeathSound "baron/shotx"
 	Decal "BaronScorch"

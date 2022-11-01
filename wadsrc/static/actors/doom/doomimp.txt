@@ -72,8 +72,6 @@ ACTOR DoomImpBall
 	Damage 3
 	Projectile
 	+RANDOMIZE
-	RenderStyle Add
-	Alpha 1
 	SeeSound "imp/attack"
 	DeathSound "imp/shotx"
 	States
