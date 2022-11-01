@@ -77,6 +77,7 @@ ACTOR RevenantTracer
 	+RANDOMIZE
 	SeeSound "skeleton/attack"
 	DeathSound "skeleton/tracex"
+	RenderStyle Add
 	States
 	{
 	Spawn:
@@ -101,6 +102,8 @@ ACTOR RevenantTracerSmoke
 	+NOBLOCKMAP
 	+NOGRAVITY
 	+NOTELEPORT
+	RenderStyle Translucent 
+	Alpha 0.5
 	States
 	{	
 	Spawn:

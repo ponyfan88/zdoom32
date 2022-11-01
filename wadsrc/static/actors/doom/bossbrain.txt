@@ -110,7 +110,7 @@ ACTOR SpawnFire
 	Height 78
 	+NOBLOCKMAP
 	+NOGRAVITY
-	RenderStyle None
+	RenderStyle Add
 	States
 	{
 	Spawn:
