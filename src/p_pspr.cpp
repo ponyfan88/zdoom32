@@ -72,6 +72,8 @@ enum EWRF_Options
 
 // PUBLIC DATA DEFINITIONS -------------------------------------------------
 
+fixed_t prevx, prevy = 0;
+
 // [SO] 1=Weapons states are all 1 tick
 //		2=states with a function 1 tick, others 0 ticks.
 CVAR(Int, sv_fastweapons, false, CVAR_SERVERINFO);
@@ -581,7 +583,7 @@ void P_BobWeapon (player_t *player, float *x, float *y, double ticfrac)
 			}
 		}
 
-		if (curbob != 0)
+		if (player->WeaponState & WF_WEAPONBOBBING)
 		{
 			//[SP] Added in decorate player.viewbob checks
 			float bobx = float(player->bob * Rangex * (float)player->mo->ViewBob);
@@ -617,11 +619,14 @@ void P_BobWeapon (player_t *player, float *x, float *y, double ticfrac)
 				xx[i] = bobx*angle.Cos();
 				yy[i] = 0.5f * (boby * (1.f + ((angle * 2).Cos())));
 			}
+			
+			prevx = xx[i];
+			prevy = yy[i];
 		}
 		else
 		{
-			xx[i] = 0;
-			yy[i] = 0;
+			xx[i] = prevx;
+			yy[i] = prevy;
 		}
 	}
 	*x = (float)(xx[0] * (1. - ticfrac) + xx[1] * ticfrac);
